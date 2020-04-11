@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Home {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+form {
+  width: 500px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.books {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.book {
+  max-height: 500px;
+  width: 220px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.book:hover {
+  transform: scale(1.02);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.thumbnail {
+  width: 250px;
+}
+
+.container {
+  margin-top: 150px;
+}
+
+p {
+  margin-top: 20px;
+}
+
+.title,
+.subtitle,
+.author,
+.publishers,
+.year {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.pagination {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
